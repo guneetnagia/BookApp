@@ -9,5 +9,4 @@
 			findBookService.findByAll(vm.filterItem);
 		}
 	}
-	
 }());
