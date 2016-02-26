@@ -1,32 +1,27 @@
  <div class="panel panel-primary">
- 	<div class="panel-heading" style="font-size:large">Find Book
+ 	<div class="panel-heading" style="font-size:large">Search Book
  	</div>
   	<div class="panel-body">
   	<form class="form-horizontal" role="form">
   		<div class="form-group">
   			<label for="name" class="col-sm-1 control-label">Title</label>
-  			<div class="col-sm-2">
-  				<input type="text" class="form-control" ng-model="findCtrl.filterItem.title" placeholder="Title">
+  			<div class="col-sm-4">
+  				<input type="text" class="form-control" ng-model="addBook.newBook.name" id="name" placeholder="Title">
   			</div>
-  			
   			<label for="author" class="col-sm-1 control-label">Author</label>
-  			<div class="col-sm-2">
-  				<input type="text" class="form-control" ng-model="findCtrl.filterItem.author" placeholder="Author">
+  			<div class="col-sm-4">
+  				<input type="text" class="form-control" ng-model="addBook.newBook.author" id="author" placeholder="Author">
   			</div>
-  			
-  			<div class="col-sm-offset-1 col-sm-2">
-  				<input type="number" class="form-control" ng-model="findCtrl.filterItem.priceGreater" placeholder="Price Greater">
-  			</div>
-  			<label for="price" class="col-sm-1 control-label"> &gt; Price &lt; </label>
-  			<div class="col-sm-2">
-  				<input type="number" class="form-control" ng-model="findCtrl.filterItem.priceLess" placeholder="Price Less">
-  			</div>
-  			
-  			<div class="col-sm-offset-6 col-sm-2">
-  				<button class="btn btn-default" ng-click="findCtrl.searchFilter()">Search</button>
+  			<label for="price" class="col-sm-1 control-label">Price</label>
+  			<div class="col-sm-4">
+  				<input type="number" class="form-control" ng-model="addBook.newBook.price" id="price" placeholder="Price">
   			</div>
   		</div>
-  		
+  		<div class="form-group">
+  			<div class="col-sm-offset-1 col-sm-5">
+  				<button class="btn btn-default" ng-click="findctrl.searchBookCtrlfn()">Save</button>
+  			</div>
+  		</div>
   	</form>
   	</div>
  </div>

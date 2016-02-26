@@ -4,7 +4,8 @@
 	
 	function dataService($q,$http){
 		return {
-			getAllBooks : getAllBooks
+			getAllBooks : getAllBooks,
+			getExample : getExample
 		};
 		
 		function getAllBooks(){
@@ -21,6 +22,10 @@
 		}
 		function sendGetBooksError(response){
 			return $q.reject('Error retrieving books (http status : '+response.status+')');
+		}
+		
+		function getExample(){
+			return '';
 		}
 	}
 }());

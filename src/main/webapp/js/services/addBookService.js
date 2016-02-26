@@ -16,10 +16,10 @@
 			.catch(addBookFail)
 		}
 		function addBookSuccess(response){
-			return response.data;
+			return 'Book Added';
 		}
 		function addBookFail(response){
-			return console.log('Error adding books (http status : '+response.status+')');
+			return 'Book Not Added ' + response.status;
 		}
 	}
 }());

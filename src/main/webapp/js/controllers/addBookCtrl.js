@@ -1,6 +1,5 @@
 (function(){
-	"use strict";
-	angular.module("bookApp")
+	angular.module('bookApp')
 		.controller('addBookCtrl',['$location','addBookService',addBookfunction]);
 	
 	function addBookfunction($location,addBookService){

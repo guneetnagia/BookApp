@@ -1,5 +1,4 @@
 (function(){
-	"use strict";
 	var myApp = angular.module("bookApp",["commonServices","ui.router"]); 
 	myApp.config(["$stateProvider","$urlRouterProvider",
 	              	function($stateProvider,$urlRouterProvider){
@@ -29,7 +28,7 @@
 			.state('searchBook',{
 				url:"/searchBook",
 				templateUrl:"../views/findBook.html",
-				controller:"findBookCtrl as findCtrl"
+				controller:"searchBookCtrl as findctrl"
 			})
 			.state('deleteBook',{
 				url:"/deleteBook/:bookId",
