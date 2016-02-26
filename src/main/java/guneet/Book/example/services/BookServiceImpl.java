@@ -58,5 +58,8 @@ public class BookServiceImpl implements BookService{
 		bookRepository.save(book);
 	}
 
+	public List<Book> findByNameLikeOrAuthorLikeOrPriceGreaterThanEqual(String name, String author, long price){
+		return bookOwnRepository.findByNameLikeOrAuthorLikeOrPriceGreaterThanEqual(name, author, price);
+	}
 	
 }

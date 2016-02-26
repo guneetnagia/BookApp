@@ -1,0 +1,8 @@
+guneet\Book\example\services\BookRepository.class
+guneet\Book\example\services\BookServiceImpl.class
+guneet\Book\example\controller\BookController.class
+guneet\Book\example\domain\Book.class
+guneet\Book\example\ServletInitializer.class
+guneet\Book\example\services\BookOwnRepository.class
+guneet\Book\example\services\BookService.class
+guneet\Book\example\BookApplication.class

@@ -14,4 +14,5 @@ public interface BookService {
 	public List<Book> findByPrice(long price);
 	public List<Book> findByNameAndAuthor(String name, String author);
 	public void updateBook(Book book);
+	public List<Book> findByNameLikeOrAuthorLikeOrPriceGreaterThanEqual(String name, String author, long price);
 }

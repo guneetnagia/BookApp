@@ -27,16 +27,7 @@ public class BookController {
 		this.bookService = bookService;
 	}
 	
-/*	@RequestMapping("/add/{name}/{author}/{price}")
-	public Book addBook(@PathVariable String name,@PathVariable String author, @PathVariable long price){
-		Book book = new Book();
-		book.setName(name);
-		book.setAuthor(author);
-		book.setPrice(price);
-		bookService.saveBook(book);
-		return book;
-	}*/
-	
+
 	@RequestMapping("/delete/{id}")
 	public void deleteBook(@PathVariable long id){
 		Book book = new Book();
@@ -98,4 +89,8 @@ public class BookController {
 		bookService.saveBook(book);
 	}
 	
+	@RequestMapping(value="/filterSearch")
+	public void filterSearchBooks(@RequestBody Book book){
+		
+	}
 }
